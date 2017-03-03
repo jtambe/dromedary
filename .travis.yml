@@ -1,4 +1,14 @@
-language: node_js
+# language: node_js
+#   node_js:
+#     - "7.2"
+#   beforescript:
+#     - npm install -g gulp
+#     - npm install
+#   script:
+#     gulp package-app
+
+
+    language: node_js
   node_js:
     - "7.2"
   beforescript:
@@ -6,3 +16,6 @@ language: node_js
     - npm install
   script:
     gulp package-app
+  deploy:
+    provider: heroku
+    app: firstjayeshheroku

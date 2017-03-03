@@ -1,11 +1,12 @@
-  language: node_js
-  node_js:
-    - "7.2"
-  beforescript:
-    - npm install -g gulp
-    - npm install
-  script:
-    gulp package-app
-  deploy:
-    provider: heroku
-    app: firstjayeshheroku
+language: node_js
+node_js:
+- '7.2'
+beforescript:
+- npm install -g gulp
+- npm install
+script: gulp package-app
+deploy:
+  provider: heroku
+  app: firstjayeshheroku
+  api_key:
+    secure: qspywnBp4AFR1ZvaLjFa/SSaEN5hdyU/NYqAUqUMGBIBnnVsTIJMSOQSvOp2iXyr463xu2BkmZU/EEy9sfdoEgK2B2N77SudG+4ARQ2b+ip+H1rv+7bGO2iG8FDXQLSQ6C8rdl6C3NigslCZzjIVQqOMAn+u0GMBDCfKXzPSei7JaSxfQn/h246pmcdRo+NmHpjPC4znJfXIHI7I6RH2y+QBsCzSDV2ev+CMzBD7I8ozkaIdqZAPpHG7ayvMPsS4paiE/AB15sg8/3SK1sicI6urNzayrJ+lRP/YMBZxJ59dcumLUJryBFpiO5MlOKGxMBBwwgk98ydGZujHp57Jy4vWyC240k75r3Hwg0JqZo8Ly69UpRCLpT4T0vPgEi30rn7twJt5FytITfmttnJlV/V1/rONUvBfLA8uirhxJaxFApTs4GD/t10KB8wcBuUJApe9azlwyoMWysYtV7V3q9PyofBqcJ0IdKENkoIgD8Y5In14YECCn49E8eQ92+5VXSSxqME970YWLmkY7MXoIn4OiD50TDHyksHYx58FVjSixF0zMMb6Enj63rmQ5JA6bGIgRJLiWA0NhP03dAtv6vn9zPEVUZ5EHaQt8vFZKbTEjW5eGRzSEZvO+TNFkS/u73+kTl497X7cSHcsQDSNoYo1MbIIzoQEuSIYAwUQKac=
